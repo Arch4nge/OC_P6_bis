@@ -27,6 +27,3 @@ id = client.post('/domain/zone/%s/record' %(domain),
 )
 
 os.environ['RECORD_ID'] = id['id']
-
-print (id['id'])
-client.delete('/domain/zone/%s/record/%d' %(domain, id['id']))
