@@ -8,6 +8,7 @@ APP_KEY = os.getenv('APP_KEY')
 APP_SECRET = os.getenv('APP_SECRET')
 CONSUMER_KEY = os.getenv('CONSUMER_KEY')
 domain = os.getenv('DOMAIN')
+id = os.getenv('RECORD_ID')
 
 client = ovh.Client(
     endpoint='ovh-eu',
@@ -16,4 +17,4 @@ client = ovh.Client(
     consumer_key=CONSUMER_KEY,
 )
 
-client.delete('/domain/zone/%s/record/%d' %(domain, id['id']))
+client.delete('/domain/zone/%s/record/%d' %(domain, id))
