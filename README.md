@@ -12,6 +12,12 @@ Basically you need to do 3 things :
 # Load requirement
 Run pip3 install -r ./requirements.txt
 
+Ensure that your remote windows host has a samba server enable.
+
+Your local host must have certbot installed.
+
+Also please note that this script use OVH as cloud provider
+
 
 # Customisation of the script
 All variables you would like to change are in 2 location:
