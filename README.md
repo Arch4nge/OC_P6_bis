@@ -6,7 +6,7 @@ The validation for the certificates is done using DNS record with OVH.
 Then the certificates is pushed on a remote wçndows host using samba.
 
 
-# How tu run the script
+# How to run the script
 Basically you need to do 3 things :
 - Install dependances for the script
 - Loads environement variables and custom variable in the script
