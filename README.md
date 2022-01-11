@@ -34,7 +34,7 @@ cp .env.example .env
 
 And load this .env file
 ```
-load .env
+export $(cat .env)
 ```
 
 # Attention
