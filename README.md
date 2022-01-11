@@ -24,15 +24,17 @@ Also please note that this script use OVH as cloud provider in order to validate
 
 
 # Customisation of the script
-All variables you would like to change are in 2 location:
- - main_script.py (Contains all infos about remote windows server where you want to renew the certificate)
- - env (either in .env file either in your environement directly) the env contain info about your ovh credentials
+All variables you would like to change are in 1 location only:
+ - env (either in .env file either in your environement directly) the env contain info about your ovh credentials and all variables used in the script
 
-example of .env file :
+just cp the original .env.example file into your own .env file :
 ```
-APP_KEY="xxx"
-APP_SECRET="yyy"
-CONSUMER_KEY="zzz"
+cp .env.example .env
+```
+
+And load this .env file
+```
+load .env
 ```
 
 # Attention
